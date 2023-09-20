@@ -1,0 +1,84 @@
+@use '../../var';
+
+.history {
+    background-color: var.$primary-color;
+    color: white;
+    border-radius: 40px;
+    padding-bottom: 8rem;
+    display: flex;
+
+    &__column {
+        flex-flow: column wrap;
+        width: 65%;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        padding-left: 5rem;
+    
+        &__title {
+            font-size: 4rem;
+            width: 27rem;
+
+            align-self: flex-start;
+        }
+
+        &__desc {
+            padding-top: 1rem;
+            font-size: 2rem;
+        }
+    
+    
+        &__fondateur{
+            padding-left: 3rem;
+            font-size: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &__img {
+                border-radius: 40px;
+
+                width: 35%;
+                height: 30%;
+            }
+
+            &__name{
+                font-size: 5rem;
+            }
+
+            &__ceo{
+                margin: -2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .history{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .history__column{
+        padding-left: 2rem;
+    }
+    .history__column__desc{
+        font-size: 1.5rem;
+    }
+    .history__column__title{
+        font-size: 2rem;
+        padding: 0rem;
+    }
+
+    .history__column__fondateur__image{
+        width: 65%;
+    }
+
+    .history__column__fondateur__name{
+        font-size: 2rem;
+    }
+
+}

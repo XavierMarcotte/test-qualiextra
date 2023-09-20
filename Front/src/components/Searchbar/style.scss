@@ -1,0 +1,61 @@
+@use '../../var';
+
+.searchbar{
+    padding: 2rem;
+    margin: 1em auto;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "primo secondo tertio";
+    background: var.$primary-color;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    &-back{
+        grid-template-areas: "primo";
+        a{
+            background: white;
+        }
+    }
+    &-search{
+        grid-template-areas: "secondo";
+        display: flex;
+        margin: auto;
+        position: relative;
+                input{
+                    font-size: 1.25em;
+                    padding: 0.8em 2em;
+                    border-radius: 54px;
+                    width: 20em;
+                }
+                img{
+                    position: absolute;
+                    right: 10%;
+                    bottom: 25%;
+                }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// input{
+//     font-size: 1.25em;
+//     padding: 0.8em 2em;
+//     border-radius: 54px;
+//     width: 20em;
+//     width: 100%;
+// }

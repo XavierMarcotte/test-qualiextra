@@ -1,0 +1,32 @@
+@use '../../../var';
+
+.account-confirMail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var.$secondary-color;
+    color: var.$primary-color;
+    margin-top: 1%;
+    height: 96vh;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+
+    &-button{
+            font-size: 1.5em;
+            color: #f9f3ee;
+            background-color: #001313;
+            border-radius: 50px;
+            border: none;
+            padding: 0.5em 1.5em;
+            height: 10%;
+        &:hover{
+            color: var.$primary-color;
+            background: #dbcd29;
+            text-decoration: none;
+            box-shadow: 5px 5px 15px 5px #00000026;
+        }
+    }
+}
+

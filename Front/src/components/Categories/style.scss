@@ -1,0 +1,70 @@
+@use '../../var';
+
+.categories{
+    display: flex;
+    background-color: var.$third-color;
+    padding: 0rem 8rem;
+    border-radius: 40px;
+    justify-content: space-around;
+    justify-items: center;
+
+    &--list{
+        padding: 2rem 0.4rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: var.$primary-color;
+        min-width: 3.5rem;
+
+        &--selected{
+            background-color: var.$primary-color;
+            color: var.$third-color;
+        }
+
+        &:hover{
+            background-color: var.$primary-color;
+            cursor: pointer;
+            color: white;
+            transition: background-color 1s 50ms;
+        }
+    }
+    
+    &--logo{
+        margin: auto;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .categories{
+
+    &--logo{
+        width: 48%;
+    }
+
+    &--list{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        min-width: 4.2rem;
+    }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .categories{
+
+    &--logo{
+        width: 20%;
+    }
+
+    &--list{
+        min-width: 1.7rem;
+        padding: 1rem 0.8rem;
+        font-size: .6rem;
+    }
+    }
+}

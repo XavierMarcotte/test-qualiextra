@@ -1,0 +1,76 @@
+@use '../../var';
+
+
+footer {
+  justify-content: center;
+  background-color: var.$third-color;
+  border-radius: 40px 40px 0px 0px;
+  font-size: 1.5rem;
+
+  .column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+    margin-top: 1rem;
+
+    &--container{
+      list-style-type:none;
+
+      &--list{
+
+        &--links{
+          color: var.$primary-color;
+          text-decoration: none;
+
+          &--dark{
+            color: var.$third-color;
+            text-decoration: none;
+            &:hover {
+              color: var.$emphasis-color;
+              }
+          }
+
+        }
+      }
+    }
+  }
+  
+
+    .container--links{
+      padding: 0px 0px 1rem 4rem;
+      font-size: xx-large;
+
+      .container--links--link{
+          padding: 1rem;
+          color: var.$emphasis-color;
+
+          &:hover{
+            color: #857c1a;
+          }
+          }
+        }
+    }
+
+.dark{
+  background-color: var.$primary-color;
+  &-link{
+  color: var.$third-color;
+  }
+}
+
+.dark-link{
+  color: white;
+  }
+
+  @media screen and (max-width: 600px) {
+    footer{
+    .column {
+        font-size: 50%;
+        padding: 1rem;
+        justify-content: space-around;
+    }
+    }
+  }
+
+

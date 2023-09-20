@@ -1,0 +1,33 @@
+@use '../../var';
+
+
+.card{
+    background-color: var.$third-color;
+    border-radius: 40px;
+    margin-bottom: 2rem;
+
+    &-title{
+        font-size: 3rem;
+        padding-top: 5rem;
+        padding-left: 5rem;
+    }
+
+    &-list{
+        padding-bottom: 2rem;
+    }
+}
+.pepites{
+background-color: var.$third-color;
+}
+
+.faire_lieux_afficher{
+    &:hover{
+        cursor: pointer;
+        background-color: var.$primary-color;
+        color: var.$third-color;
+    }
+}
+
+.description-card{
+    width: 10rem;
+}

@@ -1,0 +1,170 @@
+@use '../../var';
+
+.avis{
+    background: white;
+    padding: 1em 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    &-first{
+        margin-left: 4em;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+        border-radius: 20px;
+        div{
+            display: flex;
+            align-items: center;
+            gap: 1.5em;
+            padding: 1em;
+            p{
+                font-size: 1.250em;
+                width: 50%;
+                text-align: left;
+            }
+        }
+    }
+    &-second{
+        padding-bottom: 1em;
+        width: 60%;
+        margin: 2em auto 2em 4em;
+        border-radius: 20px;
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+        &-div{
+            display: flex;
+            &-each{
+                width: 48%;
+                margin: auto;
+                &-first{
+                    height: 7em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-left: 3em;
+                    gap: 3em;
+                    p{
+                        font-size: 3.5em;
+                    }
+                }
+                &-second{
+
+                    div{
+                        display: grid;
+                        grid-template-columns: 25% 40% 20%;
+                        
+                    }
+                }
+                &-third{
+                    padding: 1em;
+                    border-radius: 21px;
+                    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+                    margin-top: 2.5em;
+                    min-height: 15em;
+                    &-items{
+                        display: grid;
+                        grid-template-columns: 15% 45% 35%;
+                        justify-content: space-between;
+                        align-items: center;
+                        &-avis{
+                            h5{
+                                font-size: 2em;
+                                margin: 0;
+                            }
+                        }
+                        img{
+                            border-radius: 50%;
+                        }
+                        &-star{
+                            background: #EDEDED;
+                            width: 4em;
+                            border-radius: 31.28px;
+                            padding: 0.5em;
+                            .star{
+                                color: orange;
+                                font-size: 1.203em;
+                            }
+                        }
+                    }
+                    &-text{
+                        margin: 1em;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+        }
+        button{
+            display: grid;
+            justify-content: center;
+            margin: 2em auto;
+            padding: 1em 3em;
+            background: var.$primary-color;
+            color: white;
+            border-radius: 98px;
+            border: none;
+        }
+    }
+    &-third{
+        width: 60%;
+        margin: 2em auto 2em 4em;
+        border-radius: 20px;
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+        &-div{
+            width: 75%;
+            margin: auto;
+            padding: 1em 0;
+            h5{
+                margin: 0;
+                font-size: 3em;
+                color: orange;
+                text-align: left;
+                text-transform: uppercase;
+            }
+            &-blue{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: var.$primary-color;
+                color: white;
+                margin-top: 2em;
+                p{
+                    font-size: 1.375em;
+                    margin-left: 3em;
+                }
+                img{
+                    margin-right: 1em;
+                }
+                &-depli{
+                    border: 1px solid var.$primary-color;
+                    padding: 1em 5em;
+                    line-height: 1.75em;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+            button{
+                font-size: 1.5em;
+                display: flex;
+                justify-content: center;
+                margin: 2em auto;
+                padding: 0.5em 2em;
+                background: var.$primary-color;
+                color: white;
+                border-radius: 98px;
+                border: none;
+            }
+        }
+    }
+}
+
+
+
+.avis-second-div-each-second-note{
+    text-align: center;
+}
+.second{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.rotate{
+    transform: rotate(180deg);
+}

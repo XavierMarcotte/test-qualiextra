@@ -1,0 +1,47 @@
+@use '../../var';
+$menu-btn-size: 30px;
+$menu-items-padding: 10px;
+
+// Styles
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var.$primary-color;
+  font-family: Arial, sans-serif;
+  display: none;
+}
+
+.menu-btn {
+  cursor: pointer;
+  width: $menu-btn-size;
+  height: $menu-btn-size;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__burger {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+    li {
+      margin: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar{
+        display: block;
+        position: absolute;
+        right: 1%;
+        width: 8rem;
+    }
+    }

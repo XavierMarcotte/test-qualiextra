@@ -1,0 +1,51 @@
+@use '../../var';
+
+.insert{
+    display: flex;
+    background-color: var.$secondary-color;
+    padding: 0 8rem;
+    border-radius: 40px;
+    justify-content: space-evenly;
+    margin: 1.5rem 0;
+
+    &--list{
+        padding: 3rem 4rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: var.$primary-color;
+        }
+
+    &--logo{
+        padding-bottom: 2rem;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .insert{
+        font-size: small;
+    }
+    .insert--logo {
+        width: 6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .insert{
+        font-size: x-small;
+        &--list{
+            padding: 1rem 1.5rem;
+        }
+    }
+    .insert--logo {
+        width: 4rem;
+    }
+
+
+}

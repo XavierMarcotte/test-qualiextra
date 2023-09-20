@@ -1,0 +1,89 @@
+@use '../../../var';
+
+.question{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var.$third-color;
+    margin: 2rem 0;
+    border-radius: 40px;
+    color: var.$primary-color;
+
+    &--header{
+        margin: auto;
+        width: 75%;
+    }
+
+    &--container{
+        display: flex;
+        width: 100%;
+
+    &--left{
+        width: 95%;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        background-color: var.$primary-color;
+        color: var.$third-color;
+        padding: 1rem 4rem 5rem 4rem;
+    }
+
+    &--right{
+        width: 100%;
+    }
+}
+
+    &--title{
+        width: 25%;
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    
+
+    &--desc{
+        font-size: 1.2em;
+        padding-bottom: 15%;
+    }
+
+    &--color{
+        color: var.$emphasis-color;
+    }
+}
+
+.wide{
+    width: 50%;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .question--container{
+        border-radius: 40px;
+        flex-direction: column;
+
+    &--left{
+        border-radius: 40px;
+        width: auto;
+    }
+}
+.date{
+    padding-bottom: 4rem;
+    &--container{
+        padding: 0;
+        margin:0;
+    }
+}
+}
+
+@media screen and (max-width: 600px) {
+.question--color{
+    font-size: 2rem;
+}
+
+.question--title{
+    font-size: 2rem;
+}
+
+.question--desc{
+    font-size: 1.5rem;
+}
+}

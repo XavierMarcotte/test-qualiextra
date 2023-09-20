@@ -1,0 +1,71 @@
+@use '../../../var';
+
+.friends{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    &--container{
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40;
+        margin-bottom: 3rem;
+    }
+
+    &--title{
+        margin-top: 3rem;
+        font-size: 2em;
+        align-self: flex-start;
+        margin-left: 4rem;
+        font-weight: bold;
+    }
+
+    &--card{
+        min-width: 8rem;
+        width: 22%;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        background-color: var.$third-color;
+        text-align: center;
+        padding: 1.5rem 0 0 0;
+
+            &--img{
+                width: 70%;
+            }
+
+            &--subtitle{
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+    }
+
+    &--search{
+        width: 80%;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 40px;
+        background-color: var.$third-color;
+        background-image: url(../LocationSelect/img/magnifying.png);
+        background-repeat: no-repeat;
+        background-position-x: 43rem;
+        background-position-y: .9rem;
+        background-size: 3%;
+    }
+}
+
+.cross{
+    border-radius: 50%;
+    padding: 1rem 1.2rem;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    background-color: var.$third-color;
+    color: var.$primary-color;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var.$emphasis-color;
+    }
+}

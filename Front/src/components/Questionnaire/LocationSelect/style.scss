@@ -1,0 +1,80 @@
+@use '../../../var';
+
+.location{
+    display: flex;
+    justify-content: center;
+
+    &--container{
+        margin-top: 15%;
+        display: flex;
+        margin-right: 2rem;
+        width: 25%;
+        flex-direction: column;
+        color: var.$emphasis-color;
+    }
+
+    &--select{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        padding: .5rem;
+        border: none;
+        border-bottom: 1px solid var.$primary-color;
+        background-color: var.$third-color;
+        color: var.$emphasis-color;
+        min-width: 14rem;
+
+        background-image: url(./img/pin.png);
+        background-repeat: no-repeat;
+        background-position-x: 12rem;
+        background-position-y: .6rem;
+        background-size: 8%;
+    }
+
+    &--search{
+        font-size: .8em;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 40px;
+        background-color: var.$third-color;
+        background-image: url(./img/magnifying.png);
+        background-repeat: no-repeat;
+        background-position-x: 12rem;
+        background-position-y: .9rem;
+        background-size: 8%;
+        margin-bottom: 4rem;
+        min-width: 14rem;
+    }
+
+    #btn{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .question--container{
+        border-radius: 40px;
+        flex-direction: column;
+
+
+    &--left{
+        border-radius: 40px;
+    }
+    .location--container{
+        padding-bottom: 2rem;
+    }
+}}
+
+@media screen and (max-width: 600px) {
+    .location{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .location--container{
+        padding-bottom: 2rem;
+        margin-right: 7rem;
+    }
+}
+

@@ -1,0 +1,82 @@
+@use './../../../var';
+.admin-presta{
+    display: flex;
+    flex-direction: column;
+    background-color: var.$third-color;
+    height: 100%;
+    margin: 2rem 0;
+    border-radius: 40px;
+    color: var.$primary-color;
+    align-items: center;
+    &-title{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    &-form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 1em;
+        margin: auto auto 5em auto;
+        input{
+            border-radius: 10px;
+            border: 1px solid grey;
+            min-height: 3em;
+            width: 100%;
+        }
+        label{
+            font-size: 1.3em;
+        }
+        &-submit{
+            background: var.$primary-color;
+            color: var.$secondary-color;
+            font-size: 1.5em;
+            padding: 1em;
+            margin-right: 0;
+            border-radius: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.267);
+            margin-top: 2em;
+            transition: 0.5s ease-in-out;
+        }
+        &-submit:hover{
+            background: var.$emphasis-color;
+            color: var.$primary-color;
+            transition: 0.5s ease-in-out;
+        }
+    }
+    
+}
+
+.validation-addition{
+    color: green;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+@media screen and (max-width: 600px) {
+    .admin-presta-title{
+        font-size: 2rem;
+    }
+
+    .en_ce_moment_leftside .moment{
+        font-size: 1rem;
+    }
+
+    .carousel-button{
+        width: 10rem;
+        height: 3rem;
+    }
+
+    .en_ce_moment_rightside_monte_cristo{
+        font-size: 1rem;
+    }
+
+    .en_ce_moment_rightside img{
+        width: 6rem;
+    }
+
+    .en_ce_moment_rightside_lieux{
+        grid-template-columns: auto;
+    }
+}

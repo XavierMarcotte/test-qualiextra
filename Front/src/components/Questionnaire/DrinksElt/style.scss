@@ -1,0 +1,75 @@
+@use '../../../var';
+
+.drink{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+    &--container{
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 15;
+        margin-bottom: 2rem;
+        margin: 0rem 4rem;
+        padding-bottom: 2rem;
+    }
+
+    &--title{
+        margin-top: 3rem;
+        font-size: 1.5em;
+        align-self: flex-start;
+        margin-left: 4rem;
+    }
+
+    &--card{
+        cursor: pointer;
+        min-width: 6rem;
+        width: 20%;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        background-color: var.$third-color;
+        text-align: center;
+        padding: .5rem 0 0 0;
+        &:hover{
+            cursor: pointer;
+            background-color: var.$emphasis-color;
+        }
+
+            &--img{
+                width: 90%;
+            }
+
+            &--subtitle{
+                font-size: 1em;
+            }
+
+            &--selected{
+                cursor: pointer;
+                background-color: var.$emphasis-color;
+                width: 20%;
+                border-radius: 20px;
+                border: 1px solid #ccc;
+                text-align: center;
+                padding: .5rem 0 0 0;
+            }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .drink--container{
+        width: 80%;
+    }
+    .weekend--card--subtitle{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .results--title{
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,11 @@
+@use '../../../var';
+
+.admin-list-item-button-client{
+    margin-bottom: 2rem;
+    background-color: var.$primary-color;
+    color: var.$third-color;
+    &:hover{
+        background-color: var.$emphasis-color;
+        color: var.$primary-color;
+    }
+}

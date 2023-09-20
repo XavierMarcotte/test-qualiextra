@@ -1,0 +1,62 @@
+@use '../../var';
+
+.question{
+    display: flex;
+    flex-direction: column;
+    background-color: var.$third-color;
+    margin: 2rem 0;
+    border-radius: 40px;
+    color: var.$primary-color;
+
+    &--header{
+        margin: auto;
+        width: 75%;
+    }
+
+    &--container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    &--left{
+        width: 100%;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        background-color: var.$primary-color;
+        color: var.$third-color;
+        padding: 5rem 2rem;
+    }
+
+    &--right{
+        width: 100%;
+    }
+}
+
+    &--title{
+        width: 25%;
+        font-size: 3.5em;
+        font-weight: bold;
+        margin-bottom: 2rem;
+
+    }
+
+    &--desc{
+        font-size: 1.2em;
+        padding-bottom: 15%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .question--container{
+        flex-direction: column;
+    }
+    .history__column__title{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .question--container{
+        flex-direction: column;
+    }
+}

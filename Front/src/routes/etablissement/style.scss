@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+}
+
+.etablissement__title {
+  color: #000;
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+
+  &-sub{
+    text-align: center;
+  }
+}
+
+.sub__etablissement { 
+    text-align: center;
+}
+
+.img__etablissement {
+  width: 7rem;
+  height: 5rem;
+}
+
+.form {
+  background-color: white;
+  width: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+  justify-items: start;
+}
+
+.form label {
+  font-size: 1.5em;
+  display: block;
+  font-weight: 400;
+}
+
+.form input,
+.form select {
+  font-size: 1.5em;
+  width: 41rem;
+  border-radius: 0.5rem;
+  height: 3rem;
+}
+
+.button {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #f9f3ee;
+  background-color: #001313;
+  width: 15rem;
+  padding: 1rem 6.5rem 1rem 5rem;
+  align-items: center;
+  border-radius: 4rem;
+}
+.button-container {
+    justify-self: end;
+  }
+  

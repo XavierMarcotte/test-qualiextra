@@ -1,0 +1,244 @@
+@use '../../var';
+
+
+.login--container{
+    display: flex;
+    background-color: var.$third-color;
+    height: 100%;
+    margin: 2rem 0;
+    border-radius: 40px;
+    padding: 4rem 2rem;
+    color: var.$primary-color;
+
+    &--left{
+        width: 50%;
+
+        &--back{
+            position: absolute;
+            left: 5%;
+            top: 22%;
+            border-radius: 50%;
+            padding: 1rem 1.2rem;
+            font-size: 1.5em;
+            box-shadow: 0 8 8 5 #00000040;
+            color: var.$primary-color;
+
+            &:hover{
+                background-color: var.$emphasis-color;
+            }
+        }
+    }
+
+    &--right{
+        width: 50%;
+        padding-left: 2.5rem;
+    }
+
+    &--title{
+        font-size: 3.5em;
+        font-weight: bold;
+        padding-bottom: 2rem;
+    }
+
+    &--form{
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        width: 85%;
+        font-size: 1.3em;
+        padding-right: 6.5rem;
+        border-right: 1px solid black;
+
+
+
+        &--names{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &--name{
+            display: flex;
+            flex-direction: column;
+            width: 47%;
+        }
+
+        &--inputs{
+            border: 0px;
+            border-bottom: 1px solid var.$emphasis-color;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            background-color: var.$third-color;
+        }
+        
+
+        &--connectwith{
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var.$primary-color;
+        }
+
+        &--icons{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            list-style: none; 
+            
+            &_btn{
+                border: none;
+                border-radius: 20px;
+                padding: 1.5rem;
+                box-shadow: 0 8 8 5 #00000040;
+            }
+        }
+        
+        &--footer{
+            display: flex;
+            flex-wrap: wrap;
+
+            &--inputs{
+                width: 66%;
+            }
+
+            &--btn{
+                margin-top: 1rem;
+            }
+        }
+    }
+
+.container--btn{
+        border: none;
+        border-radius: 40px;
+        padding: 1rem 2.5rem;
+        font-weight: bold;
+        font-size: .9em;
+        background-color: var.$primary-color;
+        color: white;
+        margin-left: 40%;
+
+        &:hover{
+            background-color: var.$emphasis-color;
+            color: var.$primary-color;
+        }
+    }
+
+    #right-form{
+        border-right: none;
+    }
+
+}
+
+.color{
+    color: var.$emphasis-color;
+}
+
+.checkbox-container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    // font-size: 1.2em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 2px solid var.$emphasis-color;
+    border-radius: 50%;
+}
+
+.checkbox-container:hover input ~ .checkbox-checkmark {
+    background-color: var.$third-color;
+}
+
+.checkbox-container input:checked ~ .checkbox-checkmark {
+    background-color: var.$emphasis-color;
+}
+
+.checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkbox-checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkbox-checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var.$third-color;
+}
+
+.conditions{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .login--container {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+.login--container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    &--left{
+        border-bottom: 1px solid black;
+        padding-bottom: 1rem
+    }
+    &--form{
+        border: 0;
+    }
+
+    &--right{
+        padding-bottom: 1rem
+    }
+}
+}
+
+@media screen and (max-width: 600px) {
+.login--container {
+    font-size: xx-small;
+}
+
+.login--container--form--icons_btn{
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+#right-form > ul{
+    padding: 0;
+    color: var.$primary-color;
+    }
+}
+
+.error{
+    color: red;
+    text-align: center;
+}

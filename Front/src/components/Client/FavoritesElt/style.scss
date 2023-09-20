@@ -1,0 +1,86 @@
+@use '../../../var';
+
+.client--favorites{
+    background-color: var.$third-color;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+
+    &--container{
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        gap: 20;
+        flex-wrap: wrap;
+
+        &--card{
+            width: 20%;
+            border: 1px solid var.$primary-color;
+            border-radius: 20px;
+            padding: 1rem 1rem 0 1rem;
+            display: flex;
+            flex-direction: column;
+            min-width: 13rem;
+
+            &--heart{
+                position: absolute;
+                margin-left: 12.5rem;
+                margin-top: .4rem;
+                color: var.$emphasis-color;
+                filter: drop-shadow(0 0 3px black);
+            }
+
+            &--img{
+                width: 100%;
+                border-radius: 20px;
+            }
+
+            &--details{
+                display: flex;
+
+                &--left{
+                    line-height: .2rem;
+                    width: 95%;
+                    &--title{
+                        line-height: normal;
+                    }
+
+                    &--localisation{
+                        font-size: .9em;
+                    }
+
+                    &--price{
+                        font-size: .8em;
+                    }
+                }
+
+                &--right{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 20%;
+
+                    &--star{
+                        margin-left: .5rem;
+                    }
+
+                    &--button{
+                        border: none;
+                        border-radius: 40px;
+                        padding: .3rem 1rem;
+                        background-color: var.$primary-color;
+                        color: var.$third-color;
+                        text-decoration: none;
+                    
+                        &:hover{
+                            background-color: var.$emphasis-color;
+                            color: var.$primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

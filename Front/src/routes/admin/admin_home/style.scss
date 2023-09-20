@@ -1,0 +1,108 @@
+@use './../../../var';
+
+.admin{
+    color: rgb(0, 19, 19);
+    background-color: rgb(249, 243, 238);
+    border-radius: 40px;
+    flex-direction: column;
+    height: 100%;
+    margin: 2rem 0px;
+    display: flex;
+    align-items: center;
+
+    &-title{
+        font-size: 3em;
+        text-align: center;
+    }
+    &-card{
+        display: flex;
+        min-width: 20rem;
+        height: 25rem;
+        overflow: auto;
+        box-shadow: 0 5px 5px 2px #00000040;
+        border-radius: 20px;
+        width: 80%;
+        &-content{
+            margin: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+    }
+    &-list{
+        margin: 2em auto auto auto;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        &-item{
+            margin: 4rem auto;
+            &-button{
+                display: block;
+                padding: 1em 2em;
+                background: var.$emphasis-color;
+                font-size: 1.75rem;
+                font-weight: bold;
+                border-radius: 50px;
+                box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.15);
+                border: none;
+                color: var.$primary-color;
+                text-decoration: none;
+                min-width: 5rem;
+            }
+            &-button:hover{
+                box-shadow: 5px 5px 15px 5px rgba(0,0,0,10);
+                transition: 0.5s ease;
+            }
+        }
+    }
+}
+
+.red-text {
+    color: red;
+  }
+.green-text {
+    color: rgb(40, 212, 17);
+  }
+.orange-text{
+    color: orange;
+}
+
+
+@media screen and (max-width: 600px) {
+    .admin-title{
+    font-size: 2rem;
+    }
+
+    .en_ce_moment_leftside .moment{
+        font-size: 1rem;
+    }
+
+    .carousel-button{
+        width: 10rem;
+        height: 3rem;
+    }
+
+    .en_ce_moment_rightside_monte_cristo{
+        font-size: 1rem;
+    }
+
+    .en_ce_moment_rightside img{
+        width: 6rem;
+    }
+
+    .en_ce_moment_rightside_lieux{
+        grid-template-columns: auto;
+    }
+
+    .admin-list-item-button{
+        font-size: 1rem;
+    }
+
+    .admin-list-item-button-client{
+        margin-bottom: 2rem;
+    }
+
+    .admin-list-item{
+        margin: 2rem;
+    }
+}

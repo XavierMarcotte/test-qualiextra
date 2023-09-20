@@ -1,0 +1,72 @@
+@use '../../../var';
+
+.dates{
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    
+    &--container{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    &--title{
+        margin-top: 3rem;
+        font-size: 1.5em;
+        align-self: flex-start;
+        margin-left: 1.5rem;
+    }
+
+    &--btns{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    &--btn{
+        width: 28%;
+        margin: 1rem;
+        border-radius: 40px;
+        border: 1px solid #ccc;
+        background-color: var.$third-color;
+        padding: 1rem;
+        font-size: 1.2em;
+        &:hover{
+            background-color: var.$emphasis-color;
+        }
+
+        &--selected{
+            width: 28%;
+            margin: 1rem;
+            border-radius: 40px;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            font-size: 1.2em;
+            background-color: var.$emphasis-color;
+        }
+    }
+}
+
+.stars--btn{
+        margin-bottom: 5.5rem;
+        font-weight: bold;
+        font-size: 1em;
+        min-width: 12rem;
+    }
+
+.center-btn{
+    width: 30%;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+
+    .stars--btn {
+        min-width: 12rem;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Swear-Display-Medium";
+    src: url("../fonts/Swear-Display-Medium.otf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Swear-Display-Medium";
+    src: url("../fonts/Swear-Display-Bold.otf") format("truetype");
+    font-weight: bold;
+  }
+  
+  body {
+    font-family: "Swear-Display-Medium", sans-serif;
+  }

@@ -1,0 +1,84 @@
+@use '../../var.scss';
+
+.avec{
+    font-size: 2.5em;
+    padding-top: 1.5em;
+    margin-left: 2em;
+    text-transform: capitalize;
+    font-weight: bold;
+    span{
+        color: var.$emphasis-color;
+    }
+}
+.afaire{
+    background: white;
+    border-radius: 40px;
+}
+.afaireavec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 3em;
+
+}
+.faire{
+    width: 15rem;
+    border-radius: 18px;
+    padding: 1em ;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    img{
+        width: 100%;
+        height: 15rem;
+        text-align: center;
+        border-radius: 10px;
+    }
+    &_monte{
+        display: grid;
+        grid-template-columns: 60% 20%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
+        .star{
+            color: var.$emphasis-color;
+        }
+        &_cristo{
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var.$primary-color;
+        }
+        &_avis{
+            text-align: center;
+        }
+    }
+    &_lieux{
+        display: grid;
+        grid-template-columns: 40% 50%;
+        justify-content: space-between;
+        margin-bottom: 0.8em;
+        align-items: start;
+        
+        &_ville{
+            color: #020887;
+            margin: 0;
+        }
+
+        &_afficher{
+            background-color: var.$secondary-color;
+            border-radius: 46px;
+            border: none;
+            padding: 9px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .afaireavec{
+        display: flex;
+        flex-direction: column;
+    }
+}
+

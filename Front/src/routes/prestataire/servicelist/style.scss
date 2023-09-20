@@ -1,0 +1,43 @@
+@use '../../../var';
+
+.servicelistsearch{
+    justify-content: center;
+    padding-top: 5rem
+}
+
+.servicelist{
+    background-color: var.$third-color ;
+    border-radius: 20px;
+    padding: 4rem 8rem;
+
+    &-title{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    &-article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .servicelist{
+        padding: 2rem 4rem;
+        &-title{
+            font-size: 2.5rem;
+        }
+    }
+    }
+
+
+@media screen and (max-width: 600px) {
+    .servicelist{
+        padding: 1.5rem 2rem;
+        &-title{
+            font-size: 2rem;
+        }
+    }
+    }

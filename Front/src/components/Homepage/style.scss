@@ -1,0 +1,186 @@
+@use '../../var';
+
+.en_ce_moment{
+    position: relative;
+    margin: 1rem 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 25%;
+    justify-content: space-around;
+    &_leftside{
+        margin-top: 3.5em;
+        .moment{
+            font-size: 3em;
+            margin-bottom: 1em;
+            color: #FAF8D4;
+        }
+        .package{
+            margin: 0;
+            font-size: 1.5em;
+            color: #FAF8D4;
+        }
+        h2{
+            margin: 0;
+            font-size: 6em;
+            font-weight: bold;
+        }
+
+        &_bg{
+            position: absolute;
+            border-radius: 40px;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s ease;
+            opacity: 0;
+        }
+    }
+    &_rightside{
+        background: white;
+        border-radius: 18px;
+        color: black;
+        margin: 3em 0em 3em auto;
+        padding: 1em;
+        img{
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+        }
+        &_monte{
+            display: grid;
+            grid-template-columns: 50% 20%;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1em;
+            .star{
+                color: orange;
+            }
+            &_cristo{
+                margin: 0;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: var.$primary-color;
+                transition: opacity 0.5s ease;
+                opacity: 0;
+            }
+            &_avis{
+                text-align: center;
+            }
+        }
+        &_lieux{
+            display: grid;
+            grid-template-columns: 40% 30%;
+            justify-content: space-between;
+            margin-bottom: 0.8em;
+            align-items: start;
+            &_ville{
+                color: #020887;
+                margin: 0;
+                transition: opacity 0.5s ease;
+                opacity: 0;
+            }
+            &_afficher{
+                background-color: var.$secondary-color;
+                border-radius: 46px;
+                border: none;
+                padding: 9px 20px;
+                font-weight: bold;
+            }
+        }
+
+        &_img{
+    transition: opacity 0.5s ease;
+    opacity: 0;
+        }
+    }
+}
+.carousel-button {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15em;
+    height: 4em;
+    background-color: #bbbbbb88;
+    border-radius: 49px;
+    cursor: pointer;
+    overflow: hidden;
+    gap: 10px;
+
+    span {
+        width: 1em;
+        height: 1em;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: #ededed;
+        transition: background-color 0.3s ease;
+    
+        &.active-image {
+            background-color: var.$emphasis-color;
+            }
+        }
+    }
+
+.homepage-title{
+    padding: 0;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.fade-out{
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .en_ce_moment_leftside h2{
+        font-size: 3.5rem;
+    }
+
+    .en_ce_moment_leftside .moment{
+        font-size: 2.5rem;
+    }
+
+    .en_ce_moment_rightside{
+        font-size: smaller;
+    }
+
+    .carousel-button{
+        width: 12rem;
+        height: 4rem;
+    }
+    }
+
+@media screen and (max-width: 600px) {
+    .en_ce_moment_leftside h2{
+        font-size: 2rem;
+    }
+
+    .en_ce_moment_leftside .moment{
+        font-size: 1rem;
+    }
+
+    .carousel-button{
+        width: 10rem;
+        height: 3rem;
+    }
+
+    .en_ce_moment_rightside_monte_cristo{
+        font-size: 1rem;
+    }
+
+    .en_ce_moment_rightside img{
+        width: 6rem;
+    }
+
+    .en_ce_moment_rightside_lieux{
+        grid-template-columns: auto;
+    }
+}

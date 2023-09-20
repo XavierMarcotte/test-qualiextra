@@ -1,0 +1,74 @@
+@use '../../../var';
+
+.results{
+    background-color: var.$third-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 40px;
+
+        &--title{
+            font-size: 4em;
+            align-self: center;
+            font-weight: bold;
+            width: 40%;
+        }
+
+        &--image{
+            margin-top: 2rem;
+            width: 15%;
+            min-width: 10rem;
+        }
+
+        &--container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            &--card{
+                border-radius: 20px;
+                border: 1px solid #ccc;
+                background-color: var.$third-color;
+                text-align: center;
+                padding: .5rem 0 0 0;
+                margin: 2rem 1rem;
+                &:hover{
+                    background-color: var.$emphasis-color;
+                }
+        
+                    &--img{
+                        width: 90%;
+                    }
+        
+                    &--subtitle{
+                        font-size: 1em;
+                    }
+            }
+    }
+}
+
+.results--btn{
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .results--title{
+        font-size: 1rem;
+    }
+    .results--container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .results--title{
+        font-size: 2rem;
+    }
+}

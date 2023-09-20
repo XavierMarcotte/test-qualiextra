@@ -1,0 +1,36 @@
+@use '../../var';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var.$primary-color;
+    padding: 2rem 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+
+    &--link{
+        margin-left: 50%;
+    }
+    &--logo{
+        min-width: 2rem;
+        width: 75%;
+    }
+
+    &--btn{
+        align-self: center;
+        background-color: var.$secondary-color;
+        color: var.$primary-color;
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 1.2em;
+
+        &:hover{
+            cursor: pointer;
+            background-color: var.$primary-color;
+            color: var.$third-color;
+        }
+    }
+}

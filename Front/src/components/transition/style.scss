@@ -1,0 +1,82 @@
+@use '../../var';
+
+.transition{
+    background-color: var.$third-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+        &--title{
+            font-size: 5rem;
+            align-self: center;
+            font-weight: 700;
+            padding: 3rem;
+        }
+
+        &--desc{
+            font-size: 2rem;
+            padding: 1rem;
+        }
+
+        &--image{
+            width: 30%;
+        }
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.progress {
+    width: 65rem;
+    height:20px;
+    border-radius: 20px;
+    background:
+    linear-gradient(var.$primary-color 0 0) 0/0% no-repeat
+    var.$secondary-color;
+    animation:p 4s infinite;
+  }
+  @keyframes p {
+      100% {background-size:100%}
+  }
+
+
+@media screen and (max-width: 1200px) {
+    .progress{
+        width: 30rem;
+    }
+    }
+
+@media screen and (max-width: 600px) {
+    .progress{
+        width: 18rem;
+    }
+    }
+
+
+    @media screen and (max-width: 1200px) {
+        .transition--title{
+            font-size: 2rem;
+        }
+    
+        .transition--desc{
+            font-size: 1.5rem;
+        }
+    
+        .transition--image{
+            width: 40%;
+        }
+        }
+    
+    @media screen and (max-width: 1200px) {
+        .transition--title{
+            font-size: 1.5rem;
+        }
+    
+        .transition--desc{
+            font-size: 1rem;
+        }
+        .transition--image{
+            width: 50%;
+        }
+        }

@@ -1,0 +1,66 @@
+@use '../../../var';
+
+.favloc{
+
+    &--container{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    &--title{
+        margin-top: 3rem;
+        font-size: 1.5em;
+        align-self: flex-start;
+        margin-left: 1.5rem;
+    }
+
+    &--btns{
+        width: 100%;
+    }
+
+    &--btn{
+        min-width: 8rem;
+        width: 28%;
+        margin: 1rem;
+        border-radius: 40px;
+        border: 1px solid #ccc;
+        background-color: var.$third-color;
+        padding: 1rem;
+        font-size: 1.2em;
+        &:hover{
+            background-color: var.$emphasis-color;
+        }
+
+        &--selected{
+            width: 28%;
+            margin: 1rem;
+            border-radius: 40px;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            font-size: 1.2em;
+            background-color: var.$emphasis-color;
+        }
+    }
+    &--next{
+        padding: 2rem 0rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .favloc--next{
+        padding: 1rem 0rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .favloc--next{
+        padding: 2rem 0rem;
+    }
+}

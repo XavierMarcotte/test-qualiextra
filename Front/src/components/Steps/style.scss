@@ -1,0 +1,116 @@
+@use '../../var';
+
+.step{
+    color: var.$emphasis-color;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 2rem 0;
+}
+
+.bar{
+    display: flex;
+    background-color: var.$secondary-color;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    height: 1rem;
+
+    &--progress{
+
+        width: 25%;
+        
+        &--on-1{
+            background-color: var.$emphasis-color;
+            width: 25%;
+            border-radius: 15px;
+            animation: spin 3s linear 1;
+            z-index: 0;
+        }
+
+        &--on-1-static{
+            background-color: var.$emphasis-color;
+            width: 25%;
+            border-radius: 15px;
+            z-index: 0;
+        }
+
+        &--on-2{
+            background-color: var.$emphasis-color;
+            width: 25%;
+            border-radius: 15px;
+            animation: spin 1s linear 1;
+            z-index: 0;
+        }
+
+        &--on-2-static{
+            background-color: var.$emphasis-color;
+            width: 25%;
+            border-radius: 15px;
+            z-index: 0;
+        }
+
+        &--on-3{
+            background-color: var.$emphasis-color;
+            width: 25%;
+            border-radius: 15px;
+            animation: spin 1s linear 1;
+            z-index: 0;
+        }
+
+        &--on-3-static{
+            background-color: var.$emphasis-color;
+            width: 25%;
+            border-radius: 15px;
+            z-index: 0;
+        }
+
+        &--on-4{
+            background-color: var.$emphasis-color;
+            width: 25%;
+            border-radius: 15px;
+            animation: spin 1s linear 1;
+            z-index: 0;
+        }
+    }
+
+    &--number{
+        position: absolute;
+        align-self: center;
+        color: var.$primary-color;
+        padding: .5rem .8rem;
+        background-color: white;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px black;
+        z-index: 1;
+
+        &_1{
+            margin-left: 18%;
+        }
+
+        &_2{
+            margin-left: 36%;
+        }
+
+        &_3{
+            margin-left: 55%;
+        }
+    }
+}
+
+
+@keyframes spin {
+0% {
+    transform-origin: 0px;
+    transform: scaleX(0%);
+}
+
+30%{
+    transform-origin: 0px;
+    transform: scaleX(0%);
+}
+
+100% {
+    transform-origin: 0px;
+    transform: scaleX(100%);
+}
+}

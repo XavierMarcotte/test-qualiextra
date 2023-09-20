@@ -1,0 +1,18 @@
+@use '../../var';
+
+.test-de-adresse{
+    color: var.$third-color;
+    font-size: .5em;
+    padding-top: 0;
+    margin-top: .5rem;
+}
+.test-de-name{
+    color: var.$emphasis-color;
+    text-align: center;
+    background-color: var.$primary-color;
+    width: 75%;
+    border-radius: 40px;
+    font-size: 1em;
+    padding: 1rem;
+    margin: 1rem;
+}
